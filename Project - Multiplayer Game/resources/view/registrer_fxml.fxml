@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="anchorPaneRegister" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fx.controllers.Controller">
+  <children>
+    <ImageView fx:id="backround" fitHeight="768.0" fitWidth="1366.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@../Image/Stridsvogn.png" />
+      </image>
+    </ImageView>
+    <ImageView fx:id="Logo" fitHeight="200.0" fitWidth="300.0" layoutX="18.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@../Image/logo.png" />
+      </image>
+    </ImageView>
+    <Button layoutX="43.0" layoutY="678.0" mnemonicParsing="false" onAction="#btnGoToLogin" text="Tilbake til innlogging" />
+      <Slider fx:id="volumeSlider2" layoutX="45.0" layoutY="721.0" max="0.0" min="-20.0" onMouseClicked="#changeVolume" onMouseDragged="#changeVolume" />
+    <Pane layoutX="724.0" layoutY="302.0">
+      <children>
+        <ImageView id="Logo" fitHeight="403.0" fitWidth="586.0" layoutX="18.0" layoutY="43.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+          <image>
+            <Image url="@../Image/Skattemelding.png" />
+          </image>
+               <effect>
+                  <DropShadow />
+               </effect>
+        </ImageView>
+            <VBox layoutX="61.0" layoutY="116.0" opacity="0.94" spacing="2.0">
+               <children>
+              <TextField fx:id="regUsername" prefHeight="32.0" prefWidth="200.0" promptText="Brukernavn" />
+              <TextField fx:id="regEmail" prefHeight="32.0" prefWidth="200.0" promptText="E-mail" />
+              <PasswordField fx:id="regPassword" prefHeight="32.0" prefWidth="200.0" promptText="Passord" />
+              <PasswordField fx:id="regPassword_check" prefHeight="32.0" prefWidth="200.0" promptText="Bekreft passord" />
+                  <Text fx:id="registrationFeedback" fill="#ff1c1c" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="223.0">
+                     <VBox.margin>
+                        <Insets top="4.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="Apple SD GothicNeo ExtraBold" size="14.0" />
+                     </font>
+                  </Text>
+               </children>
+            </VBox>
+        <Button fx:id="btnRegister" layoutX="283.0" layoutY="382.0" mnemonicParsing="false" onAction="#btnRegister" prefHeight="38.0" prefWidth="128.0" text="SEND">
+          <tooltip>
+            <Tooltip text="Submits your registration" />
+          </tooltip>
+        </Button>
+      </children>
+    </Pane>
+  </children>
+</AnchorPane>

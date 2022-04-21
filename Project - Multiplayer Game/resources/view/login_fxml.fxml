@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.media.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="anchorPaneLogin" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1366.0" styleClass="theme" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fx.controllers.Controller">
+  <children>
+      <MediaView fx:id="introVideo" fitHeight="768.0" fitWidth="1366.0" layoutX="1.0" layoutY="1.0" />
+    <ImageView id="skjult" fitHeight="498.0" fitWidth="784.0" layoutX="-6.0" layoutY="-3.0" rotate="-180.0">
+      <image>
+        <Image url="@../Image/vedum.png" />
+      </image>
+    </ImageView>
+    <ImageView fx:id="Logo" fitHeight="272.0" fitWidth="483.55554483103197" layoutX="413.0" layoutY="448.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@../Image/logo.png" />
+      </image>
+    </ImageView>
+     <Rectangle arcHeight="0.0" arcWidth="5.0" fill="TRANSPARENT" height="48.0" layoutX="720.0" layoutY="620.0" rotate="-32.0" stroke="#c53319" strokeType="INSIDE" strokeWidth="4.5" width="210.0">
+         <effect>
+            <DropShadow color="#00000010" />
+         </effect></Rectangle>
+         <Hyperlink ellipsisString="" layoutX="730.0" layoutY="612.0" minHeight="48.0" onAction="#btnGoToRegistrer" prefHeight="48.0" prefWidth="200" rotate="-32.0" text="REGISTRER DEG" textAlignment="CENTER" textFill="#c53319">
+           <font>
+             <Font name="Impact" size="29.0" />
+           </font>
+           <tooltip>
+             <Tooltip text="registrer en helt ny bruker" />
+           </tooltip>
+         <padding>
+            <Insets left="7.0" top="7.0" />
+         </padding>
+         <effect>
+            <DropShadow color="#00000010" />
+         </effect>
+         </Hyperlink>
+    <Text fill="#ffd904" layoutX="406.0" layoutY="527.0" strokeType="OUTSIDE" strokeWidth="1.0" text="BETA">
+      <font>
+        <Font name="Kefa Regular" size="32.0" />
+      </font>
+    </Text>
+      <Text fx:id="loginFeedback" fill="RED" layoutX="355.0" layoutY="305.0" stroke="#252525" strokeType="OUTSIDE" strokeWidth="0.3" textAlignment="CENTER" wrappingWidth="600.0">
+         <font>
+            <Font name="Tahoma Bold" size="18.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect></Text>
+      <Slider fx:id="volumeSlider1" layoutX="585.0" layoutY="707.0" max="0.0" min="-20.0" onMouseClicked="#changeVolume" onMouseDragged="#changeVolume" />
+      <VBox layoutX="537.0" layoutY="320.0" prefHeight="97.0" prefWidth="230.0" spacing="15.0">
+         <children>
+         <TextField fx:id="username" prefHeight="36.0" prefWidth="230.0" promptText="Brukernavn">
+               <effect>
+                  <DropShadow height="42.25" radius="25.9375" width="63.5" />
+               </effect></TextField>
+         <PasswordField fx:id="password" prefHeight="36.0" prefWidth="230.0" promptText="Passord">
+               <effect>
+                  <DropShadow height="52.875" radius="28.59375" width="63.5" />
+               </effect></PasswordField>
+         </children>
+      </VBox>
+   <Button fx:id="login" layoutX="538.0" layoutY="439.0" mnemonicParsing="false" onAction="#btnLogin" prefHeight="36.0" prefWidth="230.0" text="Logg inn">
+         <effect>
+            <DropShadow height="42.25" radius="25.9375" width="63.5" />
+         </effect>
+      </Button>
+  </children>
+</AnchorPane>
