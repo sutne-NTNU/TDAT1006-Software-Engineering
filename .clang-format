@@ -1,0 +1,21 @@
+BasedOnStyle: WebKit
+Language: Java
+MaxEmptyLinesToKeep: 1
+ColumnLimit: 100
+BreakBeforeBraces: Allman # All braces on new line
+BreakAfterJavaFieldAnnotations: true
+AllowShortCaseLabelsOnASingleLine: true
+AllowShortIfStatementsOnASingleLine: true
+AllowShortLoopsOnASingleLine: true
+AllowShortFunctionsOnASingleLine: Empty
+AllowShortLambdasOnASingleLine: Empty
+AllowShortBlocksOnASingleLine: Empty
+AlignTrailingComments: true
+AlignEscapedNewlines: Left
+AlignOperands: AlignAfterOperator
+AlignAfterOpenBracket: BlockIndent
+AlignArrayOfStructures: Right
+IndentCaseLabels: true
+NamespaceIndentation: All
+BinPackArguments: false
+BinPackParameters: false

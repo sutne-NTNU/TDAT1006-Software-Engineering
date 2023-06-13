@@ -1,0 +1,12 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "request": "launch",
+      "vmArgs": "--module-path ./lib --add-modules=javafx.base,javafx.controls,javafx.fxml,javafx.graphics,javafx.media",
+      "mainClass": "client.App",
+      "name": "Launch Application"
+    }
+  ]
+}

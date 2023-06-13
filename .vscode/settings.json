@@ -1,0 +1,6 @@
+{
+  "editor.rulers": [100], // To match clang-format
+  "java.project.sourcePaths": ["src", "test"],
+  "java.project.outputPath": "bin",
+  "css.lint.vendorPrefix": "ignore" // ignore error in css of only using "-fx-"
+}
