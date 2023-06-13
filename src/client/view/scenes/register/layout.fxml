@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="768.0" prefWidth="1366.0" styleClass="root" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.view.scenes.register.Controller">
+  <children>
+    <ImageView fitHeight="786.0" fitWidth="1395.0" layoutY="-8.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@../../../resources/images/tank-outside-kalvskinnet.png" />
+      </image>
+    </ImageView>
+    <ImageView fitHeight="200.0" fitWidth="300.0" layoutX="55.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@../../../resources/images/logo-v3.png" />
+      </image>
+    </ImageView>
+    <Pane layoutX="724.0" layoutY="302.0">
+      <children>
+        <ImageView id="tax-form" fitHeight="442.0" fitWidth="632.0" layoutX="14.0" layoutY="51.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+          <image>
+            <Image url="@../../../resources/images/skattemelding.png" />
+          </image>
+        </ImageView>
+        <VBox layoutX="52.0" layoutY="130.0" opacity="0.94" spacing="2.0">
+          <children>
+            <TextField fx:id="username" prefHeight="32.0" prefWidth="200.0" promptText="Brukernavn" />
+            <!-- <TextField fx:id="email" prefHeight="32.0" prefWidth="200.0" promptText="E-mail" /> -->
+            <PasswordField fx:id="password" prefHeight="32.0" prefWidth="200.0" promptText="Passord" />
+            <PasswordField fx:id="passwordVerification" onAction="#onClickRegister" prefHeight="32.0" prefWidth="200.0" promptText="Bekreft passord" />
+            <Text id="feedback" fx:id="feedback" textAlignment="CENTER" wrappingWidth="223.0" />
+          </children>
+        </VBox>
+        <Button layoutX="412.0" layoutY="403.0" mnemonicParsing="false" onAction="#onClickRegister" prefHeight="38.0" prefWidth="128.0" text="SEND" />
+      </children>
+    </Pane>
+  </children>
+   <stylesheets>
+      <URL value="@../../theme.css" />
+      <URL value="@style.css" />
+   </stylesheets>
+</AnchorPane>

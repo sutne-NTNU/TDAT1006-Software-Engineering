@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import java.lang.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="768.0" prefWidth="1366.0" styleClass="root" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.view.scenes.menu.Controller">
+    <children>
+      <ImageView fitHeight="768.0" fitWidth="1366.0" layoutX="1.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../resources/images/stortinget-ute.png" />
+         </image>
+        <effect>
+          <GaussianBlur />
+        </effect>
+      </ImageView>
+      <ImageView id="secret" fitHeight="307.0" fitWidth="495.0" layoutX="712.0" rotate="-180.0">
+      <image>
+        <Image url="@../../../resources/images/vedum.png" />
+      </image>
+      </ImageView>
+      <ImageView fitHeight="537.0" fitWidth="563.0" layoutY="232.0" preserveRatio="true">
+         <image>
+            <Image url="@../../../resources/images/erna.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="532.0" fitWidth="558.0" layoutX="916.0" layoutY="237.0" preserveRatio="true">
+         <image>
+            <Image url="@../../../resources/images/jonas.png" />
+         </image>
+      </ImageView>
+      <VBox id="menu-background" layoutX="518.0" layoutY="200.0" spacing="8.0">
+         <children>
+            <ImageView fitHeight="202.0" fitWidth="300.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../resources/images/logo-v3.png" />
+               </image>
+            </ImageView>
+            <Button mnemonicParsing="false" onAction="#onClickJoinLobby" prefHeight="32.0" prefWidth="300.0" text="Finn Lobby" />
+            <!-- <Button disable="true" mnemonicParsing="false" onAction="#onClickGoToStats" prefHeight="32.0" prefWidth="300.0" text="Statistikk" /> -->
+            <Button mnemonicParsing="false" onAction="#onClickSignOut" prefHeight="32.0" prefWidth="300.0" text="Logg Ut" />
+         </children>
+      </VBox>
+    </children>
+   <stylesheets>
+      <URL value="@../../theme.css" />
+      <URL value="@style.css" />
+   </stylesheets>
+</AnchorPane>

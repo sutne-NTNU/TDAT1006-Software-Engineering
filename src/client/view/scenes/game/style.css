@@ -1,0 +1,55 @@
+/* Hide ScrollPane background */
+#game-chat-background {
+  -fx-background-color: rgba(255, 255, 255, 0.6);
+  -fx-background-radius: 8px;
+}
+
+.municipality {
+  -fx-fill: white;
+  -fx-stroke: black;
+  -fx-stroke-width: 3px;
+  -fx-stroke-type: outside;
+}
+
+.floating-text {
+  -fx-fill: white;
+  -fx-font-size: 20;
+  -fx-font-weight: bold;
+  -fx-stroke: rgba(0, 0, 0, 0.692);
+  -fx-stroke-width: 1px;
+  -fx-stroke-type: outside;
+  -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.8), 10, 0, 0, 0);
+}
+.floating-text#current-player-name {
+  -fx-fill: red;
+  -fx-font-size: 42;
+}
+.floating-text#winner-info-background {
+  -fx-background-color: rgba(0, 0, 0, 0.3);
+  -fx-background-radius: 16px;
+  -fx-padding: 16px;
+}
+.floating-text#winner-party {
+  -fx-fill: red;
+  -fx-font-size: 42;
+}
+.floating-text#winner-name {
+  -fx-fill: red;
+  -fx-font-size: 64;
+}
+.floating-text#selected-municipality {
+  -fx-font-size: 32;
+}
+.floating-text#attack-result {
+  -fx-font-size: 24;
+}
+
+#end-turn-button {
+  -fx-font-size: 38;
+}
+
+#winner-info-background {
+  -fx-background-color: rgba(0, 0, 0, 0.5);
+  -fx-background-radius: 16px;
+  -fx-padding: 16px;
+}

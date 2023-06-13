@@ -1,0 +1,41 @@
+#lobby-background {
+  -fx-background-color: #ffffffb0;
+  -fx-background-radius: 16px;
+}
+
+.table-view {
+  -fx-background-color: #ffffffb0;
+  -fx-background-radius: 8px;
+  -fx-font-weight: bold;
+  -fx-padding: 0 6px;
+}
+.table-view .column-header-background {
+  -fx-background-color: transparent;
+  -fx-effect: none;
+}
+.table-view .column-header {
+  -fx-background-color: transparent;
+  -fx-effect: none;
+}
+.table-view .table-row-cell {
+  -fx-background-radius: 8px;
+  -fx-padding: 0 4px;
+  -fx-table-cell-border-color: transparent;
+}
+.table-view .table-row-cell:odd {
+  -fx-background-color: transparent;
+}
+.table-view .table-row-cell:even {
+  -fx-background-color: rgba(0, 0, 0, 0.05);
+}
+
+.num-players-ready {
+  -fx-font-size: 18px;
+  -fx-font-weight: bold;
+  -fx-padding: 9px 0;
+}
+
+#lobby-chat-background {
+  -fx-background-color: #ffffffb0;
+  -fx-background-radius: 8px;
+}

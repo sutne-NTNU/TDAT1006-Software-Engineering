@@ -1,0 +1,78 @@
+.root {
+  -fx-background-color: black;
+  -fx-font-family: "Arial";
+  -fx-font-size: 16;
+  -fx-text-fill: #e8e8e8;
+}
+
+.button {
+  -fx-background-color: #aa3d39;
+  -fx-text-fill: #e8e8e8;
+  -fx-font-weight: bold;
+  -fx-background-radius: 8px;
+  -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.8), 10, 0, 0, 0);
+}
+.button:hover {
+  -fx-effect: innershadow(gaussian, rgba(0, 0, 0, 0.8), 10, 0, 0, 0);
+}
+
+.text-field {
+  -fx-background-color: white;
+  -fx-background-radius: 8px;
+  -fx-effect: innershadow(gaussian, rgba(0, 0, 0, 0.8), 5, 0, 0, 0);
+}
+
+/* Have chat styling here as it is used in two scenes */
+#chat-window {
+  -fx-background-color: transparent;
+  -fx-padding: 8px;
+}
+#chat-window > .viewport {
+  -fx-background-color: transparent;
+}
+#chat-window {
+  -fx-background-color: transparent;
+  -fx-padding: 8px;
+}
+#chat-input {
+  -fx-background-radius: 8px 0 0 8px;
+  -fx-font-size: 14;
+  -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.3), 5, 0, 0, 0);
+}
+#chat-input-field {
+  -fx-background-radius: 8px 0 0 8px;
+}
+#chat-input-button {
+  -fx-background-radius: 0 8px 8px 0;
+  -fx-effect: none;
+}
+#chat-time {
+  -fx-font-size: 12;
+  -fx-fill: #00000093;
+}
+#chat-sender {
+  /* -fx-fill: red; */
+  -fx-font-weight: bold;
+  -fx-font-size: 12;
+}
+#chat-message {
+  -fx-font-size: 12;
+}
+
+/* Scrollbars */
+.scroll-bar:vertical,
+.scroll-bar:vertical .track,
+.scroll-bar:vertical .track-background,
+.scroll-bar:horizontal,
+.scroll-bar:horizontal .track,
+.scroll-bar:horizontal .track-background {
+  -fx-background-color: transparent;
+}
+.scroll-bar .increment-button,
+.scroll-bar .decrement-button {
+  -fx-opacity: 0;
+  -fx-padding: 0;
+}
+.scroll-bar .thumb {
+  -fx-background-color: #0000001e;
+}

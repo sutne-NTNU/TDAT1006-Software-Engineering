@@ -1,0 +1,14 @@
+#feedback {
+  -fx-fill: #de1a1a;
+  -fx-stroke: #00000066;
+  -fx-stroke-width: 1px;
+  -fx-stroke-linecap: round;
+  -fx-stroke-linejoin: round;
+  -fx-stroke-type: outside;
+}
+
+#input-background {
+  -fx-background-color: rgba(0, 0, 0, 0.3);
+  -fx-background-radius: 16px;
+  -fx-padding: 16px;
+}

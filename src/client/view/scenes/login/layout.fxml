@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.media.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="768.0" prefWidth="1366.0" styleClass="root" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.view.scenes.login.Controller">
+  <children>
+    <MediaView fx:id="backgroundVideo" fitHeight="768.0" fitWidth="1366.0" layoutX="1.0" layoutY="1.0" />
+    <VBox id="input-background" layoutX="569.0" layoutY="314.0" prefHeight="97.0" prefWidth="230.0" spacing="8.0">
+    <children>
+      <TextField fx:id="username" prefHeight="36.0" prefWidth="230.0" promptText="Brukernavn" />
+      <PasswordField fx:id="password" prefHeight="36.0" onAction="#onClickLogin" prefWidth="230.0" promptText="Passord" />
+      <Button mnemonicParsing="false" onAction="#onClickLogin" prefHeight="36.0" prefWidth="230.0" text="Logg Inn" />
+    </children>
+    </VBox>
+    <Text id="feedback" fx:id="feedback" layoutX="384.0" layoutY="480.0" text="&lt;feedback&gt;" textAlignment="CENTER" wrappingWidth="600.0" />
+  </children>
+   <stylesheets>
+      <URL value="@../../theme.css" />
+      <URL value="@style.css" />
+   </stylesheets>
+</AnchorPane>

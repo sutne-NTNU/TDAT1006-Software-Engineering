@@ -1,0 +1,12 @@
+#secret {
+  -fx-opacity: 0;
+}
+#secret:hover {
+  -fx-opacity: 1;
+}
+
+#menu-background {
+  -fx-background-color: rgba(255, 255, 255, 0.5);
+  -fx-background-radius: 16px;
+  -fx-padding: 16px;
+}
