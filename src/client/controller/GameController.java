@@ -141,7 +141,7 @@ public class GameController
             handleWin();
             return;
         }
-        // if (game.currentPlayer.isBot)
+        if (game.currentPlayer.isBot)
         {
             Bot.performTurn(game);
         }

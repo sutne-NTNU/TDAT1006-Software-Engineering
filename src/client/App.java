@@ -40,7 +40,7 @@ public class App extends Application
         App.lobby = this.initScene("lobby");
         App.game = this.initScene("game");
 
-        App.setScene(App.menu);
+        App.setScene(App.register);
         App.stage.show();
     }
 
